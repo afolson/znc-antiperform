@@ -6,12 +6,13 @@
  * by the Free Software Foundation.
  *
  * antiperform.cpp - Copied from werring's gist found here:
- * - https://gist.github.com/werring/472170
+ * https://gist.github.com/werring/472170
  * I'm assuming this was based on work from Un1matr1x, but I can't say for
  * sure. If one of you wants to be credited properly let me know.
  *
  * Resurrected by zomg in 2013 because people whined and I was feeling nice.
- * - Carl4NA.
+ * - For Carl -- He who wanted to protect the SwiftIRCs but didn't want to log
+ * the connect notices when he disconnected. Good thinking, Batman. Carl4NA.
  *
  * Confirmed to work on ZNC 1.0 but if you find something strange or even want
  * to make this better please have at it!
@@ -20,7 +21,7 @@
 #include <znc/main.h>
 #include <znc/Modules.h>
 #include <znc/User.h>
-//#include <algorithm>
+#include <algorithm>
  
 class CAntiPerform : public CModule {
 public:
